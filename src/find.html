@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project 2 Index</title>
+  <title>Pharmacy Find Project 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
@@ -20,7 +20,7 @@ body, html {
   font-family:'Times New Roman', Times, serif
 }
 .heros{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/myriam-zilles-KltoLK6Mk-g-unsplash.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/thom-holmes-J2e34-1CVVs-unsplash.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,15 +44,35 @@ body, html {
   background-color: lightblue;
 }
 .heroen button:hover{
-   color: black;
+  color: black;
+}
+  .container {
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 10px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=search]{
+  background-color: black;
 }
 .footer {
+   position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
    background-color: #2f2f2f;
    color: white;
    text-align: center;
+   margin-top: auto 0;
 }
 @media screen
 and (device-width: 360px)
@@ -65,7 +85,7 @@ and (min-device-width: 1200px)
 and (min-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi){
-
+  
 }
 @media only screen  
 and (min-device-width: 768px)
@@ -92,14 +112,14 @@ and (-webkit-min-device-pixel-ratio: 2){
       </ul>
     </div>
   </nav>
-  
     <div class="heroen">
       <h1 style="font-size:60px">Rx Finders</h1>
       <p>Here to Help Find Medications</p>
-      <a href="find.html" class="btn btn-primary">Click to Find a Pharmacy</a>
+      <label for="gMaps">Google Maps Search</label>
+      <input type="search" id="gmaps">
+      <input type="submit" class="btn btn-primary">
     </div>
   </div>
-  
   <footer class="footer text-center">
   <div class="footer-bottom">
     <p>&copy; 2023 Rx Finders. All rights reserved. | <a href="contact.html">Contact Us</a></p>
